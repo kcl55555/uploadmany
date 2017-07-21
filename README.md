@@ -5,12 +5,12 @@
 
 使用方法：
 
- 1，  
+1，  
  
  ```javascript 
      var util = require('../../../utils/upLoad.js') 
 ```
- 2， 
+2， 
  ```javascript  
      chooseImg: function() {
     	var that = this;
@@ -36,3 +36,6 @@
 	}
 
 ```
+
+3，
+upload.js 里面的域名和上传的接口对应改一下
