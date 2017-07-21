@@ -4,9 +4,16 @@
 因为微信自带的uploadFile接口只能每次上传一张图片，这就造成上传多张图片你的场景受到限制，所以就对uploadfile接口做了扩展。
 
 使用方法：
- 1， var util = require('../../../utils/upLoad.js')
- 2，chooseImg: function() {
-		var that = this;
+
+ 1，  
+ 
+ ```javascript 
+     var util = require('../../../utils/upLoad.js') 
+```
+ 2， 
+ ```javascript  
+     chooseImg: function() {
+    	var that = this;
 		wx.chooseImage({
 			count: 9 - that.data.chooseImgs.length,
 			sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
@@ -27,3 +34,5 @@
 			}
 		})
 	}
+
+```
